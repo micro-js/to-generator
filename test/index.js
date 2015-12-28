@@ -38,3 +38,17 @@ test('generator should produce generator object', function (t) {
   t.equal(isGeneratorObject(gen()), true)
   t.end()
 })
+
+test('should get args', function (t) {
+  var gen = toGenerator(function (arg1, arg2) {
+    this.next = next
+
+    function next () {
+      return [arg1, arg2]
+    }
+
+  })
+
+  t.deepEqual(gen(1, 2).next(), [1, 2])
+  t.end()
+})
