@@ -2,7 +2,7 @@
   "name": "@f/to-generator",
   "description": "Make a function behave and look like a generator function.",
   "repository": "git://github.com/micro-js/to-generator.git",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
